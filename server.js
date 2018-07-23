@@ -27,7 +27,4 @@ app.post('/register', register.handleRegister(db, bcrypt))
 app.get('/profile/:id', profile.handleProfile(db))
 app.put('/image', image.handleImage(db))
 app.post('/imageurl', image.handleApiCall)
-const DATABASE_URL = process.env.DATABASE_URL
-app.listen(5000, () => {console.log(`app is running at port ${DATABASE_URL}`)})
-
-console.log(5000)
+app.listen(5000, () => {console.log(`app is running at port 5000`)})
